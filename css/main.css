@@ -1,0 +1,60 @@
+body {
+    background: hsl(258, 87%, 3%);
+    color: #fffafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+
+    border-radius: 4px;
+    border: #ffffff;
+    border-width: 2px;
+    border-bottom: solid;
+}
+
+.main {
+    max-width: 66%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    border: #ffffff;
+    border-width: 1px;
+    border-radius: 4px;
+    border-bottom: solid;
+}
+
+.homeText {
+    background: #030008;
+    border-radius: 8px;
+    border: #ffffff;
+    border-width: 1px;
+    border: solid;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+a:link {
+    color: rgb(255, 128, 128);
+}
+
+a:visited {
+    color: rgb(255, 128, 128);
+}
+
+ul {
+    border-radius: 4px;
+    border: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    background: #030008; 
+    max-width:30%;
+    margin: auto;
+
+    text-align: center;
+    list-style: none;
+}
