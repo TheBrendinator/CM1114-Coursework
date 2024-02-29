@@ -46,15 +46,29 @@ a:visited {
     color: rgb(255, 128, 128);
 }
 
+
 ul {
     border-radius: 4px;
     border: #ffffff;
     border-width: 2px;
     border-style: solid;
-    background: #030008; 
-    max-width:30%;
+    background: #030008;
+    max-width: auto;
     margin: auto;
 
     text-align: center;
     list-style: none;
+}
+
+footer {
+    border-radius: 4px;
+    border: #ffffff;
+    border-width: 0px;
+    border-style: solid;
+    background: #030008;
+    margin: 4px;
+    margin-top: 50px;
+    max-width: 150px;
+    font-size: 12px;
+
 }
