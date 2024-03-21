@@ -154,5 +154,22 @@ footer {
 }
 
 img {
-    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+}
+
+#img-gallery {
+    padding-top: 10px;
+}
+
+#img-gallery .row {
+    margin-bottom: 10px;
 }
