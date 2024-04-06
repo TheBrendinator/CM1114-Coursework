@@ -1,0 +1,81 @@
+/* Color Theme */
+/* NAV */
+.navBackground {
+    background: rgb(119, 187, 219);
+}
+
+.navItem {
+    background: #4aa3f7;
+    border: #747381;
+}
+
+a:visited, a:link {
+    color: #ffffff;
+}
+
+.navItem:hover {
+    background: #3984ca;
+}
+
+.currentNav, .currentNav:hover {
+    background: #21446d;
+}
+
+/* THE MAIN CONTENT BOX */
+.contentBox {
+    color: #f3f3ff;
+    background: #0c0570;
+}
+
+/* OUTER BORDER */
+.outerTitle {
+    color: #ffffff;
+    background: #00226d;
+    background: rgb(82, 150, 240);
+}
+
+.outerBorder {
+    color: #4d4e58;
+    border: #29282e;
+    border-color: #e0e0e0;
+    background-color: #e6fdff;
+}
+
+/* OUTER CONTENT */
+.outerContentTitle {
+    text-shadow:  2px 2px #0c36be;
+    background: rgb(92, 131, 238);
+    color: #d3faff;
+}
+
+.outerContentBox {
+    color: #f3f3ff;
+    background: #0f7ab8;
+    border: #477ec7;
+}
+
+/* INNER CONTENT */
+.innerBorder {
+    border-color: #181818;
+    background: rgb(73, 115, 134);
+}
+
+.innerContentText {
+    background: #07325a;
+    color: #ffffff;
+    border: #10487e;
+}
+
+/* HTML */
+html {
+    background-color: #00051f;
+}
+
+/* BONUS */
+.highlight {
+    border-color: rgb(132, 0, 255);
+}
+
+.delight {
+    border-color: rgb(179, 237, 255);
+}
