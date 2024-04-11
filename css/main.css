@@ -6,6 +6,11 @@ footer {
     padding-bottom: 0.1%;
 }
 
+.login {
+    text-align: right;
+    padding-right: 2%;
+}
+
 img {
     display: block;
     margin-left: auto;

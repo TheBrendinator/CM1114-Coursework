@@ -10,6 +10,24 @@
     <body class="outerBorder">
         <header>
             <h6 class="outerTitle"><b>Retro Modding Society</b></h6>
+            <fieldset class="login">
+                <label for="name" style='font-size: 70%;'>Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="name" style='font-size: 70%;'>Password:</label>
+                <input style="height:30px;width:160px" type="text" id="password" name="password">
+                <button style="height:35px;width:200px" type="button" onclick="alert('You have been logged in!')"  style='font-size: 70%;'>Login</button>
+            </fieldset>
+            <script>
+                function login(){
+                    if(counter % 2 == 0){
+                        alert('You have been logged in!');
+                    }
+                    else {
+                        alert('You have been logged out');
+                    }
+                    counter += 1;
+                }
+            </script>
         </header>
 
         <div class="innerBorder">
