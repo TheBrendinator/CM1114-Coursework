@@ -30,22 +30,17 @@ img {
     border-style: solid;
 }
 
+.center {
+    text-align: center;
+    height: auto;
+}
+
 .delight {
     width: 100%;
     height: auto;
     border-width: 2px;
     border-style: solid;
     opacity: 50%;
-    filter:blur(1px)
-}
-
-.delight2 {
-    width: 100%;
-    height: auto;
-    border-width: 2px;
-    border-style: solid;
-    opacity: 50%;
-    filter:blur(5px)
 }
 
 #img-gallery {
@@ -119,9 +114,8 @@ a:visited, a:link {
     border-style: solid;
 }
 
-.outerContextText {
+.outerContentText {
     text-align: left;
-    margin: auto;
     padding-top: 15px;
     padding-left: 30px;
 }

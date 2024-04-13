@@ -7,10 +7,18 @@
         <link rel='stylesheet' href="css/main.css">
     </head>
 
+    
+
     <body class="outerBorder">
         <header class="outerTitle">
             <img alt="retro modding society logo" src="images/logo.png" style='float: left; height:50px; '> <h4 style='float: left; padding-top: 10px'><b>Retro Modding Society</b></h4>
-            
+            <fieldset class="login">
+                <label for="name" style='font-size: 70%;'>Username:</label>
+                <input style="height:30px;width:160px;" alt="Insert username" type="text" id="name" name="name">
+                <label for="name" style='font-size: 70%;'>Password:</label>
+                <input style="height:30px;width:160px; margin-top: 10px" type="text" id="password" name="password">
+                <button style="height:30px;width:200px; margin-top: 10px" type="button" onclick="alert('You have been logged in!')"  style='font-size: 70%;'>Login</button>
+            </fieldset>
             <script>
                 function login(){
                     if(counter % 2 == 0){
@@ -22,16 +30,8 @@
                     counter += 1;
                 }
             </script>
+            <div style="opacity: 0%;">a</div>
 
-            <fieldset class="login">
-                <label for="name" style='font-size: 70%;'>Username:</label>
-                <input style="height:30px;width:160px;" alt="Insert username" type="text" id="name" name="name">
-                <br>
-                <label for="name" style='font-size: 70%;'>Password:</label>
-                <input style="height:30px;width:160px; margin-top: 10px" type="text" id="password" name="password">
-                <br>
-                <button style="height:20px;width:80px; margin-top: 2px; font-size: 10px;" type="button" onclick="alert('You have been logged in!')"  style='font-size: 70%;'>Login</button>
-            </fieldset>
         </header>
 
         <div class="innerBorder">
@@ -39,9 +39,9 @@
         <nav> 
             <div class="navBackground">
                 <ul class="navPadding">
-                    <li class="navItem"><a href="index.html">Home</a></li>
-                    <li class="navItem"><a href="img_gallery.html"> Gallery</a></li>
-                    <li class="navItem currentNav"><a href="current_members.html">Current Members</a></li>
+                    <li class="navItem currentNav"><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="img_gallery.html">Gallery</a></li>
+                    <li class="navItem"><a href="current_members.html">Current Members</a></li>
                     <li class="navItem"><a href="event_calendar.html">Events</a></li>
                     <li class="navItem"><a href="contact_us.html">Contact Us</a></li>
                 </ul>
@@ -50,28 +50,30 @@
 
         <main>
             <div class="contentBox">
-                <h3 class="outerContentTitle"><b>Member List</b></h3>
+                <h3 class="outerContentTitle"><b>Welcome to the Retro Modding Society</b></h3>
                 <div class="outerContentBox">
 
                     <p class="outerContentText">The Retro Modding Society Society is RGU's unofficial
                         Retro Modding Society!</p>
                         <div class="innerContentText">
-                            <div class="row">
-                                <div class="col-sm center">
-                                    <h5>Captain</h5>
-                                    <img src = "images/simpleflips.png" class="rounded-circle massie-hovering center" 
-                                    width="200" preserveAspectRation="xMidYMid slice" 
-                                    style="overflow:hidden">
-                                    <h5>This guy</h5>
-                                </div>
-                                <div class="col-sm center">
-                                    <h5>Vice-Captain</h5>
-                                    <img src = "images/grandbear.jpg" class="rounded-circle massie-hovering center" 
-                                    width="200" preserveAspectRation="xMidYMid slice" 
-                                    style="overflow:hidden">
-                                    <h5>This other guy</h5>
-                                </div>
-                            </div>
+                                <p>Love old games? Have you ever wanted to relive them with a new, refreshing coat of paint? 
+                                    Look no further, for retro modding is here!</p>
+                            
+                                    <div id = "home-carousel" class="carousel slide" data-bs-ride = "carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class=""d-block w-100" src="images/clocktown.png">
+                                            </div>
+                    
+                                            <div class="carousel-item">
+                                                <img class=""d-block w-100" src="images/dawnanddusk.jpg">
+                                            </div>
+                    
+                                            <div class="carousel-item">
+                                                <img class=""d-block w-100" src="images/lastimpact.jfif">
+                                            </div>
+                                        </div>
+                                    </div>
                         </div>
                 </div>
 
