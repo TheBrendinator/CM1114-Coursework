@@ -51,16 +51,17 @@ img {
     margin-bottom: 10px;
 }
 
-/* CLASSES BEGIN HERE */
-/* NAV */
+/* Creates a gradient for the nav bar */
 .navBackground {
     padding: 10px;
 }
+/* Fixes the position of the nav bar */
 .navPadding {
     padding: 0px;
     margin: auto;
 }
 
+/* Themes the nav buttons */
 .navItem {
     padding: 3px;
     display: inline;
@@ -70,26 +71,29 @@ img {
     margin: auto;
 }
 
+/* Keep the links as plain text - no underlines */
 a:visited, a:link {
     text-decoration: none
 }
 
-/* THE MAIN CONTENT BOX */
+/* Spaces the boxes from the border */
 .contentBox {
     margin: 5%;
 }
 
+/* Corrects the position of the text */
 .outerTitleText {
     float: left;
-    padding-top: 10px
+    padding-top: 14px
 }
 
-.outerTitleImage {
+/* Corrects the position of the logo */
+#logo {
     float: left;
     height:50px;
 }
 
-/* OUTER BORDER */
+/* This puts the blue gradient at the top of the window */
 .outerTitle {
     text-align: left;
     padding: 4px;
@@ -98,6 +102,7 @@ a:visited, a:link {
     padding-bottom: 6px;
 }
 
+/* This creates the win98 style window border */
 .outerBorder {
     margin: auto;
     margin-bottom: 100%;
@@ -107,7 +112,14 @@ a:visited, a:link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* OUTER CONTENT */
+/* Improves the border fo the window */
+.innerBorder {
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+}
+
+/* Themes the box title */
 .outerContentTitle {
     text-align: left;
     margin: auto;
@@ -118,25 +130,21 @@ a:visited, a:link {
     border-style: solid;
 }
 
+/* Themes the inner box - part 1 */
 .outerContentBox {
     border-width: 2px;
     border-top-width: 3px;
     border-style: solid;
 }
 
+/* Themes the text in the box */
 .outerContentText {
     text-align: left;
     padding-top: 15px;
     padding-left: 30px;
 }
 
-/* INNER CONTENT */
-.innerBorder {
-    border-style: solid;
-    border-width: 2px;
-    margin: 10px;
-}
-
+/* Themes the black box */
 .innerContentText {
     text-align: left;
     border-width: 2px;
@@ -149,22 +157,26 @@ a:visited, a:link {
     padding: 20px;
 }
 
+/* Spaces the twitter timeline properly */
 .twitter-timeline{
     margin:auto;
     padding-top: 25px;
     margin-right: 0px;
 }
 
+/* Positions the input boxes for login */
 .loginBoxes {
     height:30px;
     width:160px;
     margin-top: 10px
 }
 
+/* Reduce the size of the login box text */
 .loginText {
     font-size: 70%;
 }
 
+/* Change size and position of the login button */
 .loginButton {
     height:20px;
     width:80px;
@@ -172,6 +184,7 @@ a:visited, a:link {
     font-size: 10px;
 }
 
+/* Event Calendar */
 table {
     text-align: center;
     border-collapse: collapse;
@@ -202,6 +215,7 @@ th {
     width: auto;
 }
 
+/* Reference page links */
 .referenceLink:visited, .referenceLink:link {
     color: #45e61d;
 }

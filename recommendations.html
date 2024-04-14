@@ -8,11 +8,14 @@
     </head>
 
     <script type="text/javascript" src="scripts/login.js"></script>
-
+    <!--Adds a win98 style border-->
     <body class="outerBorder">
+        <!--Adds gradient at the top of the screen-->
         <header class="outerTitle">
-            <img alt="retro modding society logo" src="images/logo.png" class="outerTitleImage"> <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
-
+            <!--Site logo & Title-->
+            <img alt="retro modding society logo" src="images/logo.png" id="logo">
+            <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
+            <!--Login box-->
             <fieldset class="login">
                 <label for="name" class="loginText">Username:</label>
                 <input class="loginBoxes" alt="Insert username" type="text" id="name" name="name">
@@ -20,15 +23,19 @@
                 <label for="name" class="loginText">Password:</label>
                 <input class="loginBoxes" type="text" id="password" name="password">
                 <br>
-                <button  type="button" onclick="alert('You have been logged in!')" class="loginText">Login</button>
+                <button  type="button" onclick="alert('You have been logged in!')" class="loginButton">Login</button>
             </fieldset>
         </header>
 
+        <!--Blue border inside window-->
         <div class="innerBorder">
 
-        <nav> 
+        <nav>
+            <!--Nav bar gradient-->
             <div class="navBackground">
+                <!--Nav bar positioning-->
                 <ul class="navPadding">
+                    <!--Nav bar items-->
                     <li class="navItem"><a href="index.html">Home</a></li>
                     <li class="navItem"><a href="img_gallery.html">Gallery</a></li>
                     <li class="navItem"><a href="current_members.html">Current Members</a></li>
@@ -41,11 +48,15 @@
         </nav>
 
         <main>
+            <!--Position the box-->
             <div class="contentBox">
+                <!--Stylize the title for the box-->
                 <h3 class="outerContentTitle"><b>Welcome to the Retro Modding Society</b></h3>
+                <!--Theme the inside of the box-->
                 <div class="outerContentBox">
-
+                    <!--Position the text inside of the box-->
                     <p class="outerContentText">Here's some of our personal recommendations of mods to try!</p>
+                        <!--Create black box inside of the box-->
                         <div class="innerContentText">
                             <a class="referenceLink" href="https://romhacking.com/hack/Peach-s-Fury">Peach's Fury</a><br>
                             <a class="referenceLink" href="https://www.smwcentral.net/?p=section&a=details&id=16059">Kaizo Mario World</a><br>
@@ -63,7 +74,7 @@
         <footer> 
             <div>
                 <p>
-                    Copyright © 2024 Brendan Scott 
+                    Copyright Brendan Scott 
                 </p>
             </div>
         </footer>

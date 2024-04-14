@@ -7,22 +7,15 @@
         <link rel='stylesheet' href="css/main.css">
     </head>
 
+    <script type="text/javascript" src="scripts/login.js"></script>
+    <!--Adds a win98 style border-->
     <body class="outerBorder">
+        <!--Adds gradient at the top of the screen-->
         <header class="outerTitle">
-            <img alt="retro modding society logo" src="images/logo.png" class="outerTitleImage"> <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
-            
-            <script>
-                function login(){
-                    if(counter % 2 == 0){
-                        alert('You have been logged in!');
-                    }
-                    else {
-                        alert('You have been logged out');
-                    }
-                    counter += 1;
-                }
-            </script>
-
+            <!--Site logo & Title-->
+            <img alt="retro modding society logo" src="images/logo.png" id="logo">
+            <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
+            <!--Login box-->
             <fieldset class="login">
                 <label for="name" class="loginText">Username:</label>
                 <input class="loginBoxes" alt="Insert username" type="text" id="name" name="name">
@@ -30,15 +23,19 @@
                 <label for="name" class="loginText">Password:</label>
                 <input class="loginBoxes" type="text" id="password" name="password">
                 <br>
-                <button  type="button" onclick="alert('You have been logged in!')" class="loginText">Login</button>
+                <button  type="button" onclick="alert('You have been logged in!')" class="loginButton">Login</button>
             </fieldset>
         </header>
 
+        <!--Blue border inside window-->
         <div class="innerBorder">
 
         <nav> 
+            <!--Nav bar gradient-->
             <div class="navBackground">
+                <!--Nav bar positioning-->
                 <ul class="navPadding">
+                    <!--Nav bar items-->
                     <li class="navItem"><a href="index.html">Home</a></li>
                     <li class="navItem"><a href="img_gallery.html"> Gallery</a></li>
                     <li class="navItem"><a href="current_members.html">Current Members</a></li>
@@ -51,10 +48,15 @@
         </nav>
 
         <main>
+            <!--Position the box-->
             <div class="contentBox">
+                <!--Stylize the title for the box-->
                 <h3 class="outerContentTitle"><b>Event Calendar</b></h3>
+                <!--Theme the inside of the box-->
                 <div class="outerContentBox">
-                    <div class="innerContentText">
+                    <!--Position the text inside of the box-->
+                    <p class="outerContentText">
+                        <!--Create the table-->
                         <table>
                             <tr>
                                 <th></th>
@@ -126,7 +128,41 @@
                                 <td></td> <!--Saturday-->
                                 <td></td> <!--Sunday-->
                             </tr>
-                        </table>  
+                        </table>
+
+
+                        <form class="innerContentText" id="events" name="events">
+                            <!--Create a forum-->
+                            <p>Want to recommend an event? Tell us below!</p>
+                            <fieldset>
+                             <legend></legend>
+                             <label for="events"><u><b>Events</b></u></label><br>
+                             <label for="event_title">Event Title:</label>
+                             <input type="text" id="event_title" value=""/><br><br>
+                             <label for="event_date">Event Date:</label>
+                             <input type="date" id="event_date" value=""/>
+                             <button onclick="submit_event()">Submit</button>
+                            </fieldset>
+                           </form>
+
+                           <script>
+                            function submit_event() {
+                            let title = document.forms["events"]["event_title"];
+                            let date = document.forms["events"]["event_date"];
+                            if (title == "") {
+                            alert("An event must have a title!");
+                            }
+                            else {
+                                if (date.length == 0) {
+                                    alert("An event must have a date!");
+                                }
+                                else {
+                                    alert("Event submitted! The society will contact you soon!");
+                                    }
+                                }
+                            }
+                            </script>
+
                     </div>
                 </div>
             </div>

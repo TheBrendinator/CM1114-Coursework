@@ -8,11 +8,14 @@
     </head>
 
     <script type="text/javascript" src="scripts/login.js"></script>
-
+    <!--Adds a win98 style border-->
     <body class="outerBorder">
+        <!--Adds gradient at the top of the screen-->
         <header class="outerTitle">
-            <img alt="retro modding society logo" src="images/logo.png" class="outerTitleImage"> <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
-
+            <!--Site logo & Title-->
+            <img alt="retro modding society logo" src="images/logo.png" id="logo">
+            <h4 class="outerTitleText"><b>Retro Modding Society</b></h4>
+            <!--Login box-->
             <fieldset class="login">
                 <label for="name" class="loginText">Username:</label>
                 <input class="loginBoxes" alt="Insert username" type="text" id="name" name="name">
@@ -20,15 +23,19 @@
                 <label for="name" class="loginText">Password:</label>
                 <input class="loginBoxes" type="text" id="password" name="password">
                 <br>
-                <button  type="button" onclick="alert('You have been logged in!')" class="loginText">Login</button>
+                <button  type="button" onclick="alert('You have been logged in!')" class="loginButton">Login</button>
             </fieldset>
         </header>
 
+        <!--Blue border inside window-->
         <div class="innerBorder">
 
         <nav> 
+            <!--Nav bar gradient-->
             <div class="navBackground">
+                <!--Nav bar positioning-->
                 <ul class="navPadding">
+                    <!--Nav bar items-->
                     <li class="navItem currentNav"><a href="index.html">Home</a></li>
                     <li class="navItem"><a href="img_gallery.html">Gallery</a></li>
                     <li class="navItem"><a href="current_members.html">Current Members</a></li>
@@ -41,16 +48,20 @@
         </nav>
 
         <main>
+            <!--Position the box-->
             <div class="contentBox">
+                <!--Stylize the title for the box-->
                 <h3 class="outerContentTitle"><b>Welcome to the Retro Modding Society</b></h3>
+                <!--Theme the inside of the box-->
                 <div class="outerContentBox">
-
+                    <!--Position the text inside of the box-->
                     <p class="outerContentText">The Retro Modding Society Society is RGU's unofficial
                         Retro Modding Society!</p>
+                        <!--Create black box inside of the box-->
                         <div class="innerContentText">
                             <p>Love old games? Have you ever wanted to relive them with a new, refreshing coat of paint? 
                                 Look no further, for retro modding is here!</p>
-                        
+                            <!--Bootstrap carousel-->
                             <div id = "home-carousel" class="carousel slide" data-bs-ride = "carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -65,6 +76,7 @@
                                         <img class=""d-block w-100" src="images/lastimpact.jfif">
                                     </div>
                                 </div>
+                                <!--Carousel buttons-->
                                 <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
@@ -81,23 +93,29 @@
         </main>
 
         <aside>
+            <!--Create another box-->
             <div class="contentBox">
+                <!--Stylize its title-->
                 <h3 class="outerContentTitle"><b>News</b></h3>
+                <!--Stylize the box-->
                 <div class="outerContentBox">
-                        <div class="innerContentText">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="highlight" margin-left:0px; margin-right: 0px;' src="images/clocktown.png">
-                                </div>
-                                <div class="col-sm">
-                                    <h4>Competition for Super Mario 64 Slide Hacks.</h4>
-                                    <p>SimpleFlips is hosting a rom hacking competition for Super Mario 64 slide hacks!
-                                        With a whopping $10,000 prize pool, it would be worth the time trying it out!
-                                    </p>
-                                    <a class="twitter-timeline" data-height="280" data-width="600" data-theme="dark" href="https://twitter.com/NintendoAmerica?ref_src=twsrc%5Etfw">Tweets by NintendoAmerica</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                </div>
+                    <!--Create the inner box-->
+                    <div class="innerContentText">
+                        <!--Place the image at the left side of the text-->
+                        <div class="row">
+                            <div class="col-sm">
+                                <img class="highlight" margin-left:0px; margin-right: 0px;' src="images/clocktown.png">
                             </div>
-                    </div> 
+                            <div class="col-sm">
+                                <h4>Competition for Super Mario 64 Slide Hacks.</h4>
+                                <p>SimpleFlips is hosting a rom hacking competition for Super Mario 64 slide hacks!
+                                    With a whopping $10,000 prize pool, it would be worth the time trying it out!
+                                </p>
+                                <!--Place a Twitter timeline (Used Nintendo's Twitter - Placeholder)-->
+                                <a class="twitter-timeline" data-height="280" data-width="600" data-theme="dark" href="https://twitter.com/NintendoAmerica?ref_src=twsrc%5Etfw">Tweets by NintendoAmerica</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                </div> 
             </div>
         </aside>
 
@@ -106,7 +124,7 @@
         <footer> 
             <div>
                 <p>
-                    Copyright © 2024 Brendan Scott 
+                    Copyright Brendan Scott 
                 </p>
             </div>
         </footer>
