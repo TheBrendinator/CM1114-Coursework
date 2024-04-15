@@ -83,12 +83,12 @@
                          <input type="radio" id="membership" value=""/><br><br>
                          <label for="upload">Attach a file:</label>
                          <input type="file" id="upload" value=""/><br><br>
-                         <button onclick="submit_event()">Submit</button>
+                         <button onclick="submit_contact()">Submit</button>
                         </fieldset>
                        </form>
 
                        <script>
-                        function submit_event() {
+                        function submit_contact() {
                             var name = document.forms["contact_us"]["name"].value;
                             var email = document.forms["contact_us"]["email"].value;
                             var membership = document.forms["contact_us"]["membership"].checked;
